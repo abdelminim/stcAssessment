@@ -1,0 +1,20 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  info:
+    env:
+      enabled: true
+  application:
+    name: stc-assessment
+    description: design pattern
+
+spring:
+  profiles:
+    active: prod
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+
